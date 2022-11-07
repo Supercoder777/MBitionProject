@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20221025 13:18:41.578" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="/Users/temp/MBitionProject/tests">
+<suite id="s1-s1" name="Apply" source="/Users/temp/MBitionProject/tests/Apply.robot">
+<test id="s1-s1-t1" name="MBition Job Search" line="15">
+<kw name="Open Job Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL2}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221025 13:18:42.857" level="INFO">Opening browser 'Chrome' to base url 'https://mbition.io/jobs/'.</msg>
+<status status="PASS" starttime="20221025 13:18:42.856" endtime="20221025 13:18:48.404"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${PageTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20221025 13:18:48.409" level="INFO">${PageTitle} = Jobs - MBition Website</msg>
+<status status="PASS" starttime="20221025 13:18:48.405" endtime="20221025 13:18:48.409"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${PageTitle}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221025 13:18:48.414" level="INFO">Page title is 'Jobs - MBition Website'.</msg>
+<status status="PASS" starttime="20221025 13:18:48.409" endtime="20221025 13:18:48.415"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221025 13:18:48.415" endtime="20221025 13:18:48.595"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221025 13:18:48.595" endtime="20221025 13:18:48.597"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:42.856" endtime="20221025 13:18:48.597"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:18:48.598" endtime="20221025 13:18:48.729"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:48.730" level="INFO">Clicking element 'css:#uc-btn-accept-banner'.</msg>
+<status status="PASS" starttime="20221025 13:18:48.729" endtime="20221025 13:18:48.782"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:48.597" endtime="20221025 13:18:48.782"/>
+</kw>
+<kw name="Jobs">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Experience Level']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:48.783" level="INFO">Clicking element 'xpath://div[normalize-space()='Experience Level']'.</msg>
+<status status="PASS" starttime="20221025 13:18:48.783" endtime="20221025 13:18:48.850"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Professional']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:48.851" level="INFO">Clicking element 'xpath://label[normalize-space()='Professional']'.</msg>
+<status status="PASS" starttime="20221025 13:18:48.851" endtime="20221025 13:18:48.910"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:48.910" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:18:48.910" endtime="20221025 13:18:50.617"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Location']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:50.618" level="INFO">Clicking element 'xpath://div[normalize-space()='Location']'.</msg>
+<status status="PASS" starttime="20221025 13:18:50.618" endtime="20221025 13:18:50.668"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Berlin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:50.669" level="INFO">Clicking element 'xpath://label[normalize-space()='Berlin']'.</msg>
+<status status="PASS" starttime="20221025 13:18:50.668" endtime="20221025 13:18:50.732"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:50.733" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:18:50.733" endtime="20221025 13:18:52.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Location']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:52.399" level="INFO">Clicking element 'xpath://div[normalize-space()='Location']'.</msg>
+<status status="PASS" starttime="20221025 13:18:52.399" endtime="20221025 13:18:52.446"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='auswahl-sum has-items'] a[class='reset']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:52.446" level="INFO">Clicking element 'css:div[class='auswahl-sum has-items'] a[class='reset']'.</msg>
+<status status="PASS" starttime="20221025 13:18:52.446" endtime="20221025 13:18:52.498"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Berlin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:52.499" level="INFO">Clicking element 'xpath://label[normalize-space()='Berlin']'.</msg>
+<status status="PASS" starttime="20221025 13:18:52.498" endtime="20221025 13:18:52.541"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:18:52.541" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:18:52.541" endtime="20221025 13:18:54.100"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:48.782" endtime="20221025 13:18:54.100"/>
+</kw>
+<kw name="Find Next Role">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:18:54.101" endtime="20221025 13:18:54.430"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:18:54.431" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:18:54.430" endtime="20221025 13:18:54.437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:18:54.437" endtime="20221025 13:18:54.466"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:18:54.466" level="INFO">Simulating Mouse Over on element 'xpath://a[normalize-space()='E2E - Test Engineer (all genders)']'.</msg>
+<status status="PASS" starttime="20221025 13:18:54.466" endtime="20221025 13:18:54.745"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221025 13:18:54.745" endtime="20221025 13:18:54.751"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221025 13:18:54.751" endtime="20221025 13:18:54.869"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:54.100" endtime="20221025 13:18:54.869"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:42.855" endtime="20221025 13:18:54.869"/>
+</test>
+<test id="s1-s1-t2" name="Apply New Role" line="21">
+<kw name="Open Job Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL2}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221025 13:18:54.872" level="INFO">Opening browser 'Chrome' to base url 'https://mbition.io/jobs/'.</msg>
+<status status="PASS" starttime="20221025 13:18:54.872" endtime="20221025 13:18:59.791"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${PageTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20221025 13:18:59.797" level="INFO">${PageTitle} = Jobs - MBition Website</msg>
+<status status="PASS" starttime="20221025 13:18:59.792" endtime="20221025 13:18:59.797"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${PageTitle}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221025 13:18:59.802" level="INFO">Page title is 'Jobs - MBition Website'.</msg>
+<status status="PASS" starttime="20221025 13:18:59.797" endtime="20221025 13:18:59.803"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221025 13:18:59.803" endtime="20221025 13:18:59.965"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221025 13:18:59.965" endtime="20221025 13:18:59.968"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:54.871" endtime="20221025 13:18:59.969"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:18:59.970" endtime="20221025 13:19:00.204"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:00.205" level="INFO">Clicking element 'css:#uc-btn-accept-banner'.</msg>
+<status status="PASS" starttime="20221025 13:19:00.205" endtime="20221025 13:19:00.248"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:59.969" endtime="20221025 13:19:00.249"/>
+</kw>
+<kw name="Jobs">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Experience Level']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:00.249" level="INFO">Clicking element 'xpath://div[normalize-space()='Experience Level']'.</msg>
+<status status="PASS" starttime="20221025 13:19:00.249" endtime="20221025 13:19:00.310"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Professional']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:00.311" level="INFO">Clicking element 'xpath://label[normalize-space()='Professional']'.</msg>
+<status status="PASS" starttime="20221025 13:19:00.311" endtime="20221025 13:19:00.362"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:00.363" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:19:00.363" endtime="20221025 13:19:02.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Location']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:02.018" level="INFO">Clicking element 'xpath://div[normalize-space()='Location']'.</msg>
+<status status="PASS" starttime="20221025 13:19:02.018" endtime="20221025 13:19:02.078"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Berlin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:02.079" level="INFO">Clicking element 'xpath://label[normalize-space()='Berlin']'.</msg>
+<status status="PASS" starttime="20221025 13:19:02.079" endtime="20221025 13:19:02.125"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:02.125" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:19:02.125" endtime="20221025 13:19:03.705"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[normalize-space()='Location']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:03.706" level="INFO">Clicking element 'xpath://div[normalize-space()='Location']'.</msg>
+<status status="PASS" starttime="20221025 13:19:03.705" endtime="20221025 13:19:03.782"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='auswahl-sum has-items'] a[class='reset']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:03.782" level="INFO">Clicking element 'css:div[class='auswahl-sum has-items'] a[class='reset']'.</msg>
+<status status="PASS" starttime="20221025 13:19:03.782" endtime="20221025 13:19:03.833"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://label[normalize-space()='Berlin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:03.834" level="INFO">Clicking element 'xpath://label[normalize-space()='Berlin']'.</msg>
+<status status="PASS" starttime="20221025 13:19:03.834" endtime="20221025 13:19:03.876"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:03.876" level="INFO">Clicking element 'css:div[class='gsk-dropdownbox aktiv'] a[class='filterbtn']'.</msg>
+<status status="PASS" starttime="20221025 13:19:03.876" endtime="20221025 13:19:05.452"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:00.249" endtime="20221025 13:19:05.452"/>
+</kw>
+<kw name="Apply Now">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:05.453" endtime="20221025 13:19:05.779"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:05.781" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:05.779" endtime="20221025 13:19:05.785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:05.785" endtime="20221025 13:19:05.815"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='E2E - Test Engineer (all genders)']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:05.816" level="INFO">Clicking element 'xpath://a[normalize-space()='E2E - Test Engineer (all genders)']'.</msg>
+<status status="PASS" starttime="20221025 13:19:05.816" endtime="20221025 13:19:07.406"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>css:.applynow</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:07.407" endtime="20221025 13:19:07.695"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:07.696" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:07.695" endtime="20221025 13:19:07.700"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.applynow</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:07.701" level="INFO">Clicking element 'css:.applynow'.</msg>
+<status status="PASS" starttime="20221025 13:19:07.700" endtime="20221025 13:19:07.809"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221025 13:19:07.809" endtime="20221025 13:19:07.812"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:05.452" endtime="20221025 13:19:07.812"/>
+</kw>
+<kw name="Application Form">
+<kw name="Switch Window" library="SeleniumLibrary">
+<var>${tab1}</var>
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<msg timestamp="20221025 13:19:07.828" level="INFO">${tab1} = CDwindow-FBF0381E32A061D80A640BD0FF67AD57</msg>
+<status status="PASS" starttime="20221025 13:19:07.814" endtime="20221025 13:19:07.828"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://h4[normalize-space()='Application form']</arg>
+<arg>Application form</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20221025 13:19:07.828" endtime="20221025 13:19:09.304"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h4[normalize-space()='Application form']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:09.305" endtime="20221025 13:19:09.611"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:09.613" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:09.611" endtime="20221025 13:19:09.621"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[name='first_name']</arg>
+<arg>Damilola</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:09.623" level="INFO">Typing text 'Damilola' into text field 'css:input[name='first_name']'.</msg>
+<status status="PASS" starttime="20221025 13:19:09.622" endtime="20221025 13:19:09.929"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[name='last_name']</arg>
+<arg>Ojedokun</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:09.929" level="INFO">Typing text 'Ojedokun' into text field 'css:input[name='last_name']'.</msg>
+<status status="PASS" starttime="20221025 13:19:09.929" endtime="20221025 13:19:10.031"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[name='email']</arg>
+<arg>samuel4luve@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:10.031" level="INFO">Typing text 'samuel4luve@yahoo.com' into text field 'css:input[name='email']'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.031" endtime="20221025 13:19:10.147"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#phone</arg>
+<arg>+380682805081</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:10.148" level="INFO">Typing text '+380682805081' into text field 'css:#phone'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.147" endtime="20221025 13:19:10.250"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css:#location</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221025 13:19:10.275" level="INFO">Element 'css:#location' is displayed.</msg>
+<status status="PASS" starttime="20221025 13:19:10.251" endtime="20221025 13:19:10.275"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#location</arg>
+<arg>Berlin</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 13:19:10.299" level="INFO">Element 'css:#location' contains text 'Berlin'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.275" endtime="20221025 13:19:10.300"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#available</arg>
+<arg>Three weeks</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:10.300" level="INFO">Typing text 'Three weeks' into text field 'css:#available'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.300" endtime="20221025 13:19:10.445"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#salary</arg>
+<arg>Open to negotiations</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:10.446" level="INFO">Typing text 'Open to negotiations' into text field 'css:#salary'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.446" endtime="20221025 13:19:10.587"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css:#permitger</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221025 13:19:10.613" level="INFO">Element 'css:#permitger' is displayed.</msg>
+<status status="PASS" starttime="20221025 13:19:10.588" endtime="20221025 13:19:10.614"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#permitger</arg>
+<arg>yes</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 13:19:10.646" level="INFO">Element 'css:#permitger' contains text 'yes'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.614" endtime="20221025 13:19:10.647"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css:#hearfrom</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221025 13:19:10.676" level="INFO">Element 'css:#hearfrom' is displayed.</msg>
+<status status="PASS" starttime="20221025 13:19:10.647" endtime="20221025 13:19:10.676"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#hearfrom</arg>
+<arg>Career Website</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 13:19:10.720" level="INFO">Element 'css:#hearfrom' contains text 'Career Website'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.676" endtime="20221025 13:19:10.721"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#otherprocess</arg>
+<arg>yes</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 13:19:10.816" level="INFO">Element 'css:#otherprocess' contains text 'yes'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.721" endtime="20221025 13:19:10.816"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#referral</arg>
+<arg>Nancy Fakour</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:10.818" level="INFO">Typing text 'Nancy Fakour' into text field 'css:#referral'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.817" endtime="20221025 13:19:10.973"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#intpos</arg>
+<arg>yes</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 13:19:11.007" level="INFO">Element 'css:#intpos' contains text 'yes'.</msg>
+<status status="PASS" starttime="20221025 13:19:10.974" endtime="20221025 13:19:11.007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:document1</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:11.007" endtime="20221025 13:19:11.031"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>id:document1</arg>
+<arg>/Users/temp/MBitionProject/CV DAMILOLA.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20221025 13:19:11.032" level="INFO">Sending /Users/temp/MBitionProject/CV DAMILOLA.pdf to browser.</msg>
+<status status="PASS" starttime="20221025 13:19:11.031" endtime="20221025 13:19:11.100"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:document4</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:11.100" endtime="20221025 13:19:11.125"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>id:document4</arg>
+<arg>/Users/temp/MBitionProject/Damilola_Ojedokun Letter of Recommendation.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20221025 13:19:11.125" level="INFO">Sending /Users/temp/MBitionProject/Damilola_Ojedokun Letter of Recommendation.pdf to browser.</msg>
+<status status="PASS" starttime="20221025 13:19:11.125" endtime="20221025 13:19:11.163"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#dataprot</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:11.164" level="INFO">Clicking element 'css:#dataprot'.</msg>
+<status status="PASS" starttime="20221025 13:19:11.163" endtime="20221025 13:19:11.276"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY-650)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:11.277" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY-650)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:11.277" endtime="20221025 13:19:11.283"/>
+</kw>
+<kw name="Take Screenshot" library="ScreenCapLibrary">
+<arg>name=screenshot</arg>
+<doc>Takes a screenshot in the specified format at library import and
+embeds it into the log file (PNG by default).</doc>
+<msg timestamp="20221025 13:19:11.657" level="INFO" html="true">&lt;a href="screenshot_1.png"&gt;&lt;img src="screenshot_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:11.283" endtime="20221025 13:19:11.657"/>
+</kw>
+<kw name="Set Screenshot Directory" library="ScreenCapLibrary">
+<arg>/Users/temp/MBitionProject/Images</arg>
+<doc>Sets the directory where screenshots are saved.</doc>
+<status status="PASS" starttime="20221025 13:19:11.657" endtime="20221025 13:19:11.658"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20221025 13:19:11.658" endtime="20221025 13:19:11.711"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221025 13:19:11.711" endtime="20221025 13:19:11.816"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:07.813" endtime="20221025 13:19:11.817"/>
+</kw>
+<status status="PASS" starttime="20221025 13:18:54.870" endtime="20221025 13:19:11.821"/>
+</test>
+<doc>Job Application Demo of MBition website</doc>
+<status status="PASS" starttime="20221025 13:18:41.603" endtime="20221025 13:19:11.822"/>
+</suite>
+<suite id="s1-s2" name="Test01" source="/Users/temp/MBitionProject/tests/Test01.robot">
+<test id="s1-s2-t1" name="MBition Home" line="13">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221025 13:19:11.845" level="INFO">Opening browser 'Chrome' to base url 'https://mbition.io/'.</msg>
+<status status="PASS" starttime="20221025 13:19:11.844" endtime="20221025 13:19:16.537"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221025 13:19:16.538" endtime="20221025 13:19:16.730"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221025 13:19:16.730" endtime="20221025 13:19:16.733"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221025 13:19:16.733" endtime="20221025 13:19:16.745"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:11.843" endtime="20221025 13:19:16.745"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:16.745" endtime="20221025 13:19:16.968"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#uc-btn-accept-banner</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:16.969" level="INFO">Clicking element 'css:#uc-btn-accept-banner'.</msg>
+<status status="PASS" starttime="20221025 13:19:16.968" endtime="20221025 13:19:17.014"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:16.745" endtime="20221025 13:19:17.015"/>
+</kw>
+<kw name="Scroll To Products">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,48000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:17.016" level="INFO">Executing JavaScript:
+window.scrollTo(0,48000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:17.015" endtime="20221025 13:19:17.021"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Our Products')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:17.022" endtime="20221025 13:19:17.326"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:17.327" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:17.327" endtime="20221025 13:19:17.334"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Our Products')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:17.335" level="INFO">Clicking element 'xpath://span[contains(text(),'Our Products')]'.</msg>
+<status status="PASS" starttime="20221025 13:19:17.334" endtime="20221025 13:19:18.855"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221025 13:19:18.855" endtime="20221025 13:19:18.919"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:17.015" endtime="20221025 13:19:18.919"/>
+</kw>
+<kw name="List Products">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Our products']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:18.920" endtime="20221025 13:19:18.947"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:18.948" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:18.947" endtime="20221025 13:19:18.952"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:19.364" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:18.952" endtime="20221025 13:19:19.364"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Embedded']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:19.364" endtime="20221025 13:19:19.643"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:19.645" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:19.643" endtime="20221025 13:19:19.651"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:20.009" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:19.652" endtime="20221025 13:19:20.009"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Software Factory']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:20.009" endtime="20221025 13:19:20.291"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:20.292" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:20.291" endtime="20221025 13:19:20.296"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:20.653" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:20.297" endtime="20221025 13:19:20.653"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='ADAS']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:20.654" endtime="20221025 13:19:20.945"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:20.946" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:20.945" endtime="20221025 13:19:20.951"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:21.341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:20.951" endtime="20221025 13:19:21.341"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Cloud Services']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:21.341" endtime="20221025 13:19:21.627"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:21.628" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:21.628" endtime="20221025 13:19:21.632"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:22.069" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:21.632" endtime="20221025 13:19:22.069"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Mobile Apps']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:22.069" endtime="20221025 13:19:22.360"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:22.361" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:22.360" endtime="20221025 13:19:22.365"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:22.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:22.366" endtime="20221025 13:19:22.902"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:18.919" endtime="20221025 13:19:22.902"/>
+</kw>
+<kw name="Go To Jobs">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+1000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:22.904" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+1000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:22.903" endtime="20221025 13:19:22.911"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:div[id='work-button'] span[class='elementor-button-text']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221025 13:19:22.912" endtime="20221025 13:19:23.169"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>css:div[id='work-button'] span[class='elementor-button-text']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:23.169" endtime="20221025 13:19:23.443"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:23.444" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:23.443" endtime="20221025 13:19:23.449"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div[id='work-button'] span[class='elementor-button-text']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:23.449" level="INFO">Clicking element 'css:div[id='work-button'] span[class='elementor-button-text']'.</msg>
+<status status="PASS" starttime="20221025 13:19:23.449" endtime="20221025 13:19:25.467"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:22.903" endtime="20221025 13:19:25.467"/>
+</kw>
+<kw name="Meet MBitioneers">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath:(//a)[177]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:25.468" endtime="20221025 13:19:25.765"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//a)[177]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:25.766" level="INFO">Clicking element 'xpath:(//a)[177]'.</msg>
+<status status="PASS" starttime="20221025 13:19:25.766" endtime="20221025 13:19:27.060"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20221025 13:19:27.060" endtime="20221025 13:19:27.134"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>We create the automotive world of tomorrow</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221025 13:19:27.164" level="INFO">Current page contains text 'We create the automotive world of tomorrow'.</msg>
+<status status="PASS" starttime="20221025 13:19:27.135" endtime="20221025 13:19:27.165"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='The MBitioneers']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:27.165" endtime="20221025 13:19:27.482"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221025 13:19:27.484" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+600)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221025 13:19:27.483" endtime="20221025 13:19:27.491"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:28.826" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:27.492" endtime="20221025 13:19:28.826"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 13:19:28.827" level="INFO">Clicking element 'xpath:(//div[@class='overlay-inner'])[1]'.</msg>
+<status status="PASS" starttime="20221025 13:19:28.826" endtime="20221025 13:19:28.876"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:28.877" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[1]'.</msg>
+<status status="PASS" starttime="20221025 13:19:28.876" endtime="20221025 13:19:29.154"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:30.342" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:29.154" endtime="20221025 13:19:30.342"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:30.342" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[2]'.</msg>
+<status status="PASS" starttime="20221025 13:19:30.342" endtime="20221025 13:19:30.621"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:31.778" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:30.622" endtime="20221025 13:19:31.778"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[3]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:31.779" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[3]'.</msg>
+<status status="PASS" starttime="20221025 13:19:31.778" endtime="20221025 13:19:32.051"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:33.328" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:32.051" endtime="20221025 13:19:33.328"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[4]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:33.328" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[4]'.</msg>
+<status status="PASS" starttime="20221025 13:19:33.328" endtime="20221025 13:19:33.604"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:34.684" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:33.604" endtime="20221025 13:19:34.684"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[5]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:34.685" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[5]'.</msg>
+<status status="PASS" starttime="20221025 13:19:34.685" endtime="20221025 13:19:34.972"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:36.061" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:34.972" endtime="20221025 13:19:36.061"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[6]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:36.062" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[6]'.</msg>
+<status status="PASS" starttime="20221025 13:19:36.061" endtime="20221025 13:19:36.338"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:37.490" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:36.339" endtime="20221025 13:19:37.490"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath:(//div[@class='overlay-inner'])[7]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221025 13:19:37.491" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='overlay-inner'])[7]'.</msg>
+<status status="PASS" starttime="20221025 13:19:37.490" endtime="20221025 13:19:37.776"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:38.900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:37.776" endtime="20221025 13:19:38.900"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>css:h1[class='elementor-heading-title elementor-size-default']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221025 13:19:38.900" endtime="20221025 13:19:39.177"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221025 13:19:39.835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221025 13:19:39.178" endtime="20221025 13:19:39.835"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221025 13:19:39.835" endtime="20221025 13:19:40.034"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:25.468" endtime="20221025 13:19:40.034"/>
+</kw>
+<status status="PASS" starttime="20221025 13:19:11.842" endtime="20221025 13:19:40.034"/>
+</test>
+<doc>Partial E2e test of MBition website</doc>
+<status status="PASS" starttime="20221025 13:19:11.828" endtime="20221025 13:19:40.036"/>
+</suite>
+<status status="PASS" starttime="20221025 13:18:41.581" endtime="20221025 13:19:40.039"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Apply">Tests.Apply</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test01">Tests.Test01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
